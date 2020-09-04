@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -46,6 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* End of Meyer Reset */
 
 * {
     box-sizing: border-box;
@@ -70,6 +71,33 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+
+/* header styling */
+header {
+    display: flex;
+    align-items: baseline;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+.top-content img {
+    width: 100%;
+    margin: 4% 0;
+}
+
+
 
 .top-content {
     display: flex;
@@ -104,13 +132,57 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* boxes */
+/* I used the flex item property order to make sure boxes stay in correct order. This is important in case another developer were to come in and edit this code. Since the boxes are numbered, order keeps them in their correct order. */
+.box1 {
+    background: teal;
+    order: 1;
+}
+.box2 {
+    background: gold;
+    order: 2;
+}
+.box3 {
+    background: cadetblue;
+    order: 3;
+}
+.box4 {
+    background: coral;
+    order: 4;
+}
+.box5 {
+    background: crimson;
+    order: 5;
+}
+.box6 {
+    background: forestgreen;
+    order: 6;
+}
+.box7 {
+    background: darkorchid;
+    order: 7;
+}
+.box8 {
+    background: hotpink;
+    order: 8;
+}
+.box9 {
+    background: indigo;
+    order: 9;
+}
+.box10 {
+    background: dodgerblue;
+    order: 10;
+}
+
 
 .bottom-content {
     display: flex;
@@ -143,4 +215,46 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* about page */
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.option {
+    width: 47%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 1%;
+    margin-bottom: 7%;
+}
+.option img {
+    width: 100%;
+}
+
+.top-content .text-container-about {
+    width: 97%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.option h2 {
+    margin-top: 3%;
+}
+
+.option-btn {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin: 3% 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3% 5%;
+}
+
+.about {
+    flex-flow: column nowrap;
+    /* width: 90%; */
+    margin-bottom: 4%;
 }
