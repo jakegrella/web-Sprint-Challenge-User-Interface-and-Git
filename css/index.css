@@ -92,24 +92,14 @@ nav {
     width: 100%;
     align-items: center;
 }
-.logo {
-    font-size: 2rem;
-}
-.logo::first-letter {
-    color: white;
-    background: black;
-    font-size: 2.5rem;
-}
+
 header a {
     text-decoration: none;
     color: black;
 }
 .top-content img {
     width: 100%;
-    margin: 5% 0;
-    height: 150px;
-    object-fit: cover;
-    object-position: 50% 80%;
+    margin: 4% 0;
 }
 
 
@@ -147,13 +137,46 @@ header a {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* boxes */
+.box1 {
+    background: teal;
+}
+.box2 {
+    background: gold;
+}
+.box3 {
+    background: cadetblue;
+}
+.box4 {
+    background: coral;
+}
+.box5 {
+    background: crimson;
+}
+.box6 {
+    background: forestgreen;
+}
+.box7 {
+    background: darkorchid;
+}
+.box8 {
+    background: hotpink;
+}
+.box9 {
+    background: indigo;
+}
+.box10 {
+    background: dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
@@ -186,4 +209,46 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* about page */
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.option {
+    width: 47%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 1%;
+    margin-bottom: 7%;
+}
+.option img {
+    width: 100%;
+}
+
+.top-content .text-container-about {
+    width: 97%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.option h2 {
+    margin-top: 3%;
+}
+
+.option-btn {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin: 3% 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3% 5%;
+}
+
+.about {
+    flex-flow: column nowrap;
+    /* width: 90%; */
+    margin-bottom: 4%;
 }
